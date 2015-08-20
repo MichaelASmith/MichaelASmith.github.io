@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Mobile Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="themes/myTheme.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js">
+	</script>
+	<style>
+		.content div div p {
+		background-color: #ccc;
+		height: 50px;
+		border: 1px solid #333;
+		margin: 0px;
+		}
+	</style>
+	</head> 
+
+<body>  
+<!-- begin first page-->
+	<div id="page1" data-role="page"data-theme="d">	
+<!-- Header -->
+		<header data-role="header"><h1>MY RESTAURANT</h1>
+		</header>	
+<!-- Page contents -->
+		<div data-role="content" class="content">													
+					<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Cutlery icon.png"
+						alt="Cutlery icon"
+						class="icon"
+						style="position: relative; left: 44%;">
+<!-- link to new page -->
+			<a href="#page2" data-role="button" data-icon="" data-iconpos="bottom" data-transition="flip">Go to Menu Page (Leads to Recipe Page)</a>
+			<a href="#page3" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Go to Restaurant Information Page</a>
+			<a href="#page4" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Go to Feedback Page</a>
+			<a href="#page5" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Go to Developer Information Page</a>
+			
+<!-- Citations -->
+			<H5>Image(s) Sourced From:</H5>
+			<p>https://pixabay.com/en/food-information-restaurant-knife-44057/</p>
+		</div>
+<!-- footer -->
+		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>							
+	</div>																						
+<!-- end first page -->
+	
+	
+	 
+<!-- begin second page-->
+	<div id="page2" data-role="page"data-theme="e">															
+		<header data-role="header"><h1>MENU</h1></header>
+		<div data-role="content" class="content">
+			<h3>What Would You Like To See?</h3>
+			<ul data-role="listview">
+<!-- Count Bubble -->
+				<li>
+				<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Entrees.jpg"    
+								alt="Entrees"
+								class="icon">
+								<a href="#">Entrees</a><span class="ui-li-count">9</span>	
+					<ul>
+						<header data-role="header"><h1>MENU</h1></header>
+						<li>					
+						<a href="#"> 
+							<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg"    
+								alt="French flag icon"
+								class="icon">
+							French
+						</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\Cajun Flag.jpg"
+									alt="Cajun flag icon"
+									class="icon">
+								Cajun
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\American Flag.png"
+									alt="American flag icon"
+									class="icon">
+								American
+							</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+				<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Mains.jpg"    
+								alt="Mains"
+								class="icon"><a href="#">Mains</a><span class="ui-li-count">9</span>
+					<ul>
+						<li>				
+						<a href="#"> 
+							<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg"    
+								alt="French flag icon"
+								class="icon">
+							French
+						</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\Cajun Flag.jpg"
+									alt="Cajun flag icon"
+									class="icon">
+								Cajun
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\American Flag.png"
+									alt="American flag icon"
+									class="icon">
+								American
+							</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+				<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Desserts.jpg"    
+								alt="Desserts"
+								class="icon"><a href="#">Desserts</a><span class="ui-li-count">9</span>
+					<ul>
+						<li>			
+						<a href="#"> 
+							<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg"    
+								alt="French flag icon"
+								class="icon">
+							French
+						</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\Cajun Flag.jpg"
+									alt="Cajun flag icon"
+									class="icon">
+								Cajun
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\American Flag.png"
+									alt="American flag icon"
+									class="icon">
+								American
+							</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+				<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Drinks.jpg"    
+								alt="Drinks"
+								class="icon"><a href="#">Drinks</a><span class="ui-li-count">9</span>
+					<ul>
+						<li>				
+						<a href="#"> 
+							<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg"    
+								alt="French flag icon"
+								class="icon">
+							French
+						</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\Cajun Flag.jpg"
+									alt="Cajun flag icon"
+									class="icon">
+								Cajun
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\American Flag.png"
+									alt="American flag icon"
+									class="icon">
+								American
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<H5>Image(s) Sourced From:</H5>
+			<p>https://pixabay.com/en/food-information-restaurant-knife-44057/</p>
+			<p>https://en.wikipedia.org/wiki/Finger_food</p>
+		</div>
+		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
+	</div>																						
+<!-- end second page-->
+	
+<!-- begin third page-->
+	<div id="page3" data-role="page">															
+		<header data-role="header"><h1>RESTAURANT INFORMATION</h1></header>
+		<div data-role="content" class="content">
+								
+		</div>
+		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
+	</div>																						
+<!-- end third page-->
+
+<!-- begin fourth page-->
+	<div id="page4" data-role="page">															
+		<header data-role="header"><h1>FEEDBACK</h1></header>
+		<div data-role="content" class="content">
+								
+		</div>
+		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
+	</div>																						
+<!-- end fourth page-->
+
+<!-- begin fifth page-->
+	<div id="page5" data-role="page">															
+		<header data-role="header"><h1>DEVELOPER INFORMATION</h1></header>
+		<div data-role="content" class="content">
+							
+		</div>
+		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
+	</div>																						
+<!-- end fifth page-->
+	
+</body>
+</html>
