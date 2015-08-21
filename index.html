@@ -209,6 +209,12 @@
 	<div id="page4" data-role="page">															
 		<header data-role="header"><h1>FEEDBACK</h1></header>
 		<div data-role="content" class="content">
+			<p><label for="basic"><h3>Customer Name:</h3></label></p>
+				<input type="text" name="name" id="basic" value=""  />
+				
+			<p><label for="basic"><h3>Customer Contact:</h3></label></p>
+			<input type="text" name="name" id="basic" value=""  />
+				
 			<form id="myform" action="formprocessor.php" method="post">
 				<div data-role="fieldcontain">
 					<label for="slider-music"><h3>Did You Enjoy The Restaurant?</h3></label>
@@ -220,10 +226,16 @@
 			</form>					
 		</div>
 		
-		<p><label for="slider-fill">Rate us on a scale from 1-10:</label>
-			<input type="range" name="slider-fill" id="slider-fill" value="10" min="0" max="10" data-highlight="true">
+		<label for="slider-fill"><h3>  Rate us on a scale from 1-10:</h3></label>
+			<input type="range" name="slider-fill" id="slider-fill" value="5" min="0" max="10" data-highlight="true">
+			
+			<p><label for="basic"><h3>  Leave us Feedback on our Restaurant:</h3></label></p>
+				<input type="text" name="name" id="basic" value=""  />
+				
+				<p><label for="basic"><h3>  Leave us Feedback on our Site:</h3></label></p>
+				<input type="text" name="name" id="basic" value=""  />
+				
 			<div class="content" data-role="content">
-				<h3>Buttons</h3>
 				<a href="#page9" data-role="button">Submit</a>
 			</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
@@ -312,12 +324,15 @@
 	<div id="page9" data-role="page">															
 		<header data-role="header"><h1>THANK YOU</h1></header>
 		<div data-role="content" class="content">
-			<h3>Thank you for submitting your feedback, we will do what we can to increase your satisfaction!</h3>
+			<h3>Thank you for submitting your feedback, we will do what we can to increase your satisfaction next time!</h3>
 			<img src="https://github.com/MichaelASmith/MichaelASmith.github.io/blob/master/Smiley.jpg?raw=true"
 						alt="Smiley"
 						class="icon"
 						style="position: relative; left: 37.5%;width: 25%;">
 		</div>
+		
+		<H5>Image(s) Sourced From:</H5>
+		<p>http://ladiesloot.com/product/smiley-face/</p>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
 <!-- end ninth page-->
