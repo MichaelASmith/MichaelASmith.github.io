@@ -209,8 +209,23 @@
 	<div id="page4" data-role="page">															
 		<header data-role="header"><h1>FEEDBACK</h1></header>
 		<div data-role="content" class="content">
-								
+			<form id="myform" action="formprocessor.php" method="post">
+				<div data-role="fieldcontain">
+					<label for="slider-music"><h3>Did You Enjoy The Restaurant?</h3></label>
+					<select name="slider-music" id="slider-music" data-role="slider">
+						<option value="on">Yes</option>
+						<option value="off">No</option>
+					</select>
+				</div>
+			</form>					
 		</div>
+		
+		<p><label for="slider-fill">Rate us on a scale from 1-10:</label>
+			<input type="range" name="slider-fill" id="slider-fill" value="10" min="0" max="10" data-highlight="true">
+			<div class="content" data-role="content">
+				<h3>Buttons</h3>
+				<a href="#page9" data-role="button">Submit</a>
+			</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
 <!-- end fourth page-->
@@ -292,6 +307,16 @@
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
 <!-- end eighth page-->
+
+<!-- begin ninth page-->
+	<div id="page9" data-role="page">															
+		<header data-role="header"><h1>THANK YOU</h1></header>
+		<div data-role="content" class="content">
+			<h3>Thank you for submitting your feedback, we will do what we can to increase your satisfaction!</h3>
+		</div>
+		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
+	</div>																						
+<!-- end ninth page-->
 	
 </body>
 </html>
