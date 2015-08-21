@@ -9,14 +9,6 @@
 	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js">
 	</script>
-	<style>
-		.content div div p {
-		background-color: #ccc;
-		height: 50px;
-		border: 1px solid #333;
-		margin: 0px;
-		}
-	</style>
 	</head> 
 
 <body>  
@@ -32,7 +24,7 @@
 						class="icon"
 						style="position: relative; left: 44%;">
 <!-- link to new page -->
-			<a href="#page2" data-role="button" data-icon="" data-iconpos="bottom" data-transition="flip">Go to Menu Page (Leads to Recipe Page)</a>
+			<a href="#page2" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Go to Menu Page</a>
 			<a href="#page3" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Go to Restaurant Information Page</a>
 			<a href="#page4" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Go to Feedback Page</a>
 			<a href="#page5" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Go to Developer Information Page</a>
@@ -49,146 +41,144 @@
 	
 	 
 <!-- begin second page-->
-	<div id="page2" data-role="page"data-theme="e">															
+	<div id="page2" data-role="page">															
 		<header data-role="header"><h1>MENU</h1></header>
 		<div data-role="content" class="content">
 			<h3>What Would You Like To See?</h3>
-			<ul data-role="listview">
-<!-- Count Bubble -->
-				<li>
-				<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Entrees.jpg"    
-								alt="Entrees"
-								class="icon">
-								<a href="#">Entrees</a><span class="ui-li-count">9</span>	
-					<ul>
-						<header data-role="header"><h1>MENU</h1></header>
-						<li>					
+				<ul data-role="listview">
+					
+					<li>				
 						<a href="#"> 
-							<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg"    
-								alt="French flag icon"
-								class="icon">
-							French
+							<img src="C:\Users\Michael\Documents\GitHub\MichaelASmith.github.io/Entrees.jpg"    
+								alt="Entrees">
+							Entrees <span class="ui-li-count">3</span>
 						</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\Cajun Flag.jpg"
-									alt="Cajun flag icon"
-									class="icon">
-								Cajun
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\American Flag.png"
-									alt="American flag icon"
-									class="icon">
-								American
-							</a>
-						</li>
-					</ul>
-				</li>
-				
-				<li>
-				<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Mains.jpg"    
-								alt="Mains"
-								class="icon"><a href="#">Mains</a><span class="ui-li-count">9</span>
-					<ul>
-						<li>				
+						<ul>
+							<li>
+								<a href="lecentral.html">
+									<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg" alt="Le Central logo"> <!-- Thumbnail -->
+									Le Central
+								</a>
+								<a href="reservations.php?restaurant=403">Make Reservations</a>
+							</li>
+							<li>
+								<a href="bistrovandome.html">
+									<img src="../images/logo-generic.png" alt="Bistro Vandome logo">
+									Bistro Vandome
+								</a>
+								<a href="reservations.php?restaurant=404">Make Reservations
+								</a>
+							</li>
+							<li>
+								<a href="antoines.html">
+									<img src="../images/logo-generic.png" alt="Antoine's logo">
+									Antoine's
+								</a>
+								<a href="reservations.php?restaurant=405">Make Reservations</a>
+							</li>
+						</ul>
+					</li>
+					<li>				
 						<a href="#"> 
-							<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg"    
-								alt="French flag icon"
-								class="icon">
-							French
+							<img src="C:\Users\Michael\Documents\GitHub\MichaelASmith.github.io/Mains.jpg"    
+								alt="Mains">
+							Mains <span class="ui-li-count">3</span>
 						</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\Cajun Flag.jpg"
-									alt="Cajun flag icon"
-									class="icon">
-								Cajun
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\American Flag.png"
-									alt="American flag icon"
-									class="icon">
-								American
-							</a>
-						</li>
-					</ul>
-				</li>
-				
-				<li>
-				<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Desserts.jpg"    
-								alt="Desserts"
-								class="icon"><a href="#">Desserts</a><span class="ui-li-count">9</span>
-					<ul>
-						<li>			
+						<ul>
+							<li>
+								<a href="lecentral.html">
+									<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg" alt="Le Central logo"> <!-- Thumbnail -->
+									Le Central
+								</a>
+								<a href="reservations.php?restaurant=403">Make Reservations</a>
+							</li>
+							<li>
+								<a href="bistrovandome.html">
+									<img src="../images/logo-generic.png" alt="Bistro Vandome logo">
+									Bistro Vandome
+								</a>
+								<a href="reservations.php?restaurant=404">Make Reservations
+								</a>
+							</li>
+							<li>
+								<a href="antoines.html">
+									<img src="../images/logo-generic.png" alt="Antoine's logo">
+									Antoine's
+								</a>
+								<a href="reservations.php?restaurant=405">Make Reservations</a>
+							</li>
+						</ul>
+					</li>
+					<li>				
 						<a href="#"> 
-							<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg"    
-								alt="French flag icon"
-								class="icon">
-							French
+							<img src="C:\Users\Michael\Documents\GitHub\MichaelASmith.github.io/Desserts.jpg"    
+								alt="Desserts">
+							Desserts <span class="ui-li-count">3</span>
 						</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\Cajun Flag.jpg"
-									alt="Cajun flag icon"
-									class="icon">
-								Cajun
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\American Flag.png"
-									alt="American flag icon"
-									class="icon">
-								American
-							</a>
-						</li>
-					</ul>
-				</li>
-				
-				<li>
-				<img src="C:\Users\Michael\Desktop\SIT313-Assignment-1\Drinks.jpg"    
-								alt="Drinks"
-								class="icon"><a href="#">Drinks</a><span class="ui-li-count">9</span>
-					<ul>
-						<li>				
+						<ul>
+							<li>
+								<a href="lecentral.html">
+									<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg" alt="Le Central logo"> <!-- Thumbnail -->
+									Le Central
+								</a>
+								<a href="reservations.php?restaurant=403">Make Reservations</a>
+							</li>
+							<li>
+								<a href="bistrovandome.html">
+									<img src="../images/logo-generic.png" alt="Bistro Vandome logo">
+									Bistro Vandome
+								</a>
+								<a href="reservations.php?restaurant=404">Make Reservations
+								</a>
+							</li>
+							<li>
+								<a href="antoines.html">
+									<img src="../images/logo-generic.png" alt="Antoine's logo">
+									Antoine's
+								</a>
+								<a href="reservations.php?restaurant=405">Make Reservations</a>
+							</li>
+						</ul>
+					</li>
+					<li>				
 						<a href="#"> 
-							<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg"    
-								alt="French flag icon"
-								class="icon">
-							French
+							<img src="C:\Users\Michael\Documents\GitHub\MichaelASmith.github.io/Drinks.jpg"    
+								alt="Drinks">
+							Drinks <span class="ui-li-count">3</span>
 						</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\Cajun Flag.jpg"
-									alt="Cajun flag icon"
-									class="icon">
-								Cajun
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\American Flag.png"
-									alt="American flag icon"
-									class="icon">
-								American
-							</a>
-						</li>
-					</ul>
+						<ul>
+							<li>
+								<a href="lecentral.html">
+									<img src="C:\Users\Michael\Google Drive\University 2015\2015\Trimester 2\SIT313 - Mobile Computing\French Flag.jpg" alt="Le Central logo"> <!-- Thumbnail -->
+									Le Central
+								</a>
+								<a href="reservations.php?restaurant=403">Make Reservations</a>
+							</li>
+							<li>
+								<a href="bistrovandome.html">
+									<img src="../images/logo-generic.png" alt="Bistro Vandome logo">
+									Bistro Vandome
+								</a>
+								<a href="reservations.php?restaurant=404">Make Reservations
+								</a>
+							</li>
+							<li>
+								<a href="antoines.html">
+									<img src="../images/logo-generic.png" alt="Antoine's logo">
+									Antoine's
+								</a>
+								<a href="reservations.php?restaurant=405">Make Reservations</a>
+							</li>
+						</ul>
+					</li>
 				</li>
 			</ul>
 			
 			<H5>Image(s) Sourced From:</H5>
-			<p>https://pixabay.com/en/food-information-restaurant-knife-44057/</p>
 			<p>https://en.wikipedia.org/wiki/Finger_food</p>
+			<p>http://www.pexels.com/search/fast%20food/</p>
+			<p>http://www.pexels.com/photo/food-bakery-chocolate-sweet-1593/</p>
+			<p>http://www.hercampus.com/school/uic/5-drinks-finals-week</p>
 		</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
@@ -217,6 +207,16 @@
 <!-- begin fifth page-->
 	<div id="page5" data-role="page">															
 		<header data-role="header"><h1>DEVELOPER INFORMATION</h1></header>
+		<div data-role="content" class="content">
+							
+		</div>
+		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
+	</div>																						
+<!-- end fifth page-->
+
+<!-- begin fifth page-->
+	<div id="page6" data-role="page">															
+		<header data-role="header"><h1>RECIPES</h1></header>
 		<div data-role="content" class="content">
 							
 		</div>
