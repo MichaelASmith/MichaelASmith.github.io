@@ -9,12 +9,13 @@
 	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
 	</head> 
+<!-- I realised too late that I did not use version 1.4.5 and therefore could not use different icons as I wanted to, but changing it now messed up all my formatting so I decided it was better to stick with what works -->
 
 <body>  
 <!-- begin first page-->
-	<div id="page1" data-role="page"data-theme="d">	
+	<div id="page1" data-role="page" data-theme="j">	
 <!-- Header -->
-		<header data-role="header"><h1>MY RESTAURANT</h1>
+		<header data-role="header"><h1>MARVELOUS MICHAELS</h1>
 		</header>	
 <!-- Page contents -->
 		<div data-role="content" class="content">													
@@ -22,13 +23,13 @@
 						alt="Cutlery"
 						class="icon"
 						style="position: relative; left: 40%;width: 20%;">
-<!-- link to new page -->
+<!-- link to each page -->
 			<a href="#page2" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Menu</a>
 			<a href="#page3" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Restaurant Information</a>
 			<a href="#page4" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Feedback</a>
 			<a href="#page5" data-role="button" data-icon="bars" data-iconpos="bottom" data-transition="flip">Developer Information</a>
 			
-<!-- Citations -->
+<!-- Citations for images -->
 			<H5>Image(s) Sourced From:</H5>
 			<p>https://pixabay.com/en/food-information-restaurant-knife-44057/</p>
 		</div>
@@ -39,15 +40,17 @@
 	
 	
 	 
-<!-- begin second page-->
-	<div id="page2" data-role="page">															
+<!-- begin menu and recipe page-->
+	<div id="page2" data-role="page" data-theme="i">															
 		<header data-role="header"><h1>MENU</h1></header>
 		<div data-role="content" class="content">
+<!-- Nested List for menu and recipes -->
 			<h3>What Would You Like To See?</h3>
 				<ul data-role="listview">
 					
 					<li>				
 						<a href="#"> 
+<!-- Image for entrees and a count bubble-->
 							<img src="https://github.com/MichaelASmith/MichaelASmith.github.io/blob/master/Entrees.jpg?raw=true"    
 								alt="Entrees">
 							Entrees <span class="ui-li-count">3</span>
@@ -58,14 +61,15 @@
 									<img src="https://github.com/MichaelASmith/MichaelASmith.github.io/blob/master/Oysters.jpg?raw=true" alt="Oysters"> <!-- Thumbnail -->
 									Oysters <span class="ui-li-count"> View Recipe --></span>
 								</a>
-								<a href="#page6" data-icon="info">Recipe</a>
+<!-- A split list button to let the user view the recipe -->
+								<a href="#page7" data-icon="info">Recipe</a>
 							</li>
 							<li>
 								<a href="bistrovandome.html">
 									<img src="https://github.com/MichaelASmith/MichaelASmith.github.io/blob/master/Bruschetta.jpg?raw=true" alt="Bruschetta">
 									Bruschetta <span class="ui-li-count"> View Recipe --></span>
 								</a>
-								<a href="#page7" data-icon="info">Recipe</a>
+								<a href="#page8" data-icon="info">Recipe</a>
 								</a>
 							</li>
 							<li>
@@ -73,7 +77,7 @@
 									<img src="https://github.com/MichaelASmith/MichaelASmith.github.io/blob/master/PrawnCocktails.jpg?raw=true" alt="Prawn Cocktails">
 									Prawn Cocktails <span class="ui-li-count"> View Recipe --></span>
 								</a>
-								<a href="#page8">Recipe</a>
+								<a href="#page9">Recipe</a>
 							</li>
 						</ul>
 					</li>
@@ -181,40 +185,41 @@
 		</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
-<!-- end second page-->
+<!-- end menu and recipe page-->
 	
-<!-- begin third page-->
-	<div id="page3" data-role="page">															
+<!-- begin restaurant information page-->
+	<div id="page3" data-role="page" data-theme="h">															
 		<header data-role="header"><h1>RESTAURANT INFO</h1></header>
 		<div data-role="content" class="content">
 			<H3>Address:</h3>
 			<p>High Street</p>
 			<p>Melton  VIC  3337</p>
-			
+<!-- Google Maps image so users can see the location -->
 			<img src="https://github.com/MichaelASmith/MichaelASmith.github.io/blob/master/Map.PNG?raw=true"
 						alt="Map"
 						class="icon"
 						style="position: relative; left: 25%;width: 50%;">
-			
+<!-- A link to Google Maps with the address already entered -->
 			<a href="https://www.google.com.au/maps/place/High+St,+Melton+VIC+3337/@-37.6834908,144.582462,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad6ed28bea01dd5:0xc445867ca455eeef"
 			data-role="button" data-icon="maps" data-iconpos="bottom"> Get to Our Restaurant </a> 	
-			
-			<a href="tel:0405718560"  data-role="button" data-icon="tel" data-iconpos="top">Click to Call</a>				
+<!-- A link to call the number (I didn't know what number to put so Deakin Waurn Ponds number used) -->
+			<a href="tel:03 5227 1100"  data-role="button" data-icon="tel" data-iconpos="bottom">Click to Call</a>				
 		</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
-<!-- end third page-->
+<!-- end restaurant information page-->
 
-<!-- begin fourth page-->
+<!-- begin Feedback page-->
 	<div id="page4" data-role="page">															
 		<header data-role="header"><h1>FEEDBACK</h1></header>
 		<div data-role="content" class="content">
+<!-- Text input field for customer name -->
 			<p><label for="basic"><h3>Customer Name:</h3></label></p>
 				<input type="text" name="name" id="basic" value=""  />
-				
+<!-- Text input field for customer contact number or email -->				
 			<p><label for="basic"><h3>Customer Contact:</h3></label></p>
 			<input type="text" name="name" id="basic" value=""  />
-				
+<!-- Flip toggle to say if they enjoyed the restaurant -->				
 			<form id="myform" action="formprocessor.php" method="post">
 				<div data-role="fieldcontain">
 					<label for="slider-music"><h3>Did You Enjoy The Restaurant?</h3></label>
@@ -225,35 +230,62 @@
 				</div>
 			</form>					
 		</div>
-		
+<!-- Slider to rate restaurant from 1-10 -->		
 		<label for="slider-fill"><h3>  Rate us on a scale from 1-10:</h3></label>
 			<input type="range" name="slider-fill" id="slider-fill" value="5" min="0" max="10" data-highlight="true">
-			
+<!-- Text input field for feedback on restaurant -->				
 			<p><label for="basic"><h3>  Leave us Feedback on our Restaurant:</h3></label></p>
 				<input type="text" name="name" id="basic" value=""  />
-				
+<!-- Text input field for feedback on site -->					
 				<p><label for="basic"><h3>  Leave us Feedback on our Site:</h3></label></p>
 				<input type="text" name="name" id="basic" value=""  />
-				
+<!-- Link to page saying thank you for feedback (Even though I'm not storing feedback)-->				
 			<div class="content" data-role="content">
-				<a href="#page9" data-role="button">Submit</a>
+				<a href="#page6" data-role="button">Submit</a>
 			</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
-<!-- end fourth page-->
+<!-- end feedback page-->
 
-<!-- begin fifth page-->
-	<div id="page5" data-role="page">															
+<!-- begin developer information page-->
+	<div id="page5" data-role="page" data-theme="f">															
 		<header data-role="header"><h1>DEVELOPER INFO</h1></header>
 		<div data-role="content" class="content">
-							
+<!-- Summary of my details and reason for site -->
+			<h3>Name:</h3>
+			<p>Michael Smith</p>
+			<h3>University:</h3>
+			<p>Currently in my 5th and final year of my degree in Civil Engineering/ I.T. at Deakin University</p>
+			<h3>Purpose of website:</h3>
+			<p>This website is solely for the purpose of completing assignment 1 for SIT313 - Mobile Computing, and has no real information about any past or existing companies or places.</p>
+			<h3>Graphics:</h3>
+			<p>All images on this site have been taken from Creative Commons and sources have been given at the bottom of each page</p>
 		</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
-<!-- end fifth page-->
+<!-- end developer information page-->
 
-<!-- begin sixth page-->
+<!-- begin feedback confirmation page-->
 	<div id="page6" data-role="page">															
+		<header data-role="header"><h1>THANK YOU</h1></header>
+		<div data-role="content" class="content">
+			<h3>Thank you for submitting your feedback, we will do what we can to increase your satisfaction next time!</h3>
+			<img src="https://github.com/MichaelASmith/MichaelASmith.github.io/blob/master/Smiley.jpg?raw=true"
+						alt="Smiley"
+						class="icon"
+						style="position: relative; left: 37.5%;width: 25%;">
+		</div>
+		
+		<H5>Image(s) Sourced From:</H5>
+		<p>http://ladiesloot.com/product/smiley-face/</p>
+		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
+	</div>																						
+<!-- end feedback confirmation page-->
+
+<!-- Several pages showing recipes -->
+
+<!-- begin Oysters page-->
+	<div id="page7" data-role="page" data-theme="i">															
 		<header data-role="header"><h1>RECIPES</h1></header>
 		<div data-role="content" class="content">
 			<h3>Oysters with Balsamic and Pancetta</h3>
@@ -270,10 +302,10 @@
 		</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
-<!-- end sixth page-->
+<!-- end Oysters page-->
 
-<!-- begin seventh page-->
-	<div id="page7" data-role="page">															
+<!-- begin Bruschetta page-->
+	<div id="page8" data-role="page" data-theme="i">															
 		<header data-role="header"><h1>RECIPES</h1></header>
 		<div data-role="content" class="content">
 			<h3>Bruschetta</h3>
@@ -293,10 +325,10 @@
 		</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
-<!-- end seventh page-->
+<!-- end Bruschetta page-->
 
-<!-- begin eighth page-->
-	<div id="page8" data-role="page">															
+<!-- begin Prawn Cocktails page-->
+	<div id="page9" data-role="page" data-theme="i">															
 		<header data-role="header"><h1>RECIPES</h1></header>
 		<div data-role="content" class="content">
 			<h3>Prawn Cocktails</h3>
@@ -318,24 +350,7 @@
 		</div>
 		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
 	</div>																						
-<!-- end eighth page-->
-
-<!-- begin ninth page-->
-	<div id="page9" data-role="page">															
-		<header data-role="header"><h1>THANK YOU</h1></header>
-		<div data-role="content" class="content">
-			<h3>Thank you for submitting your feedback, we will do what we can to increase your satisfaction next time!</h3>
-			<img src="https://github.com/MichaelASmith/MichaelASmith.github.io/blob/master/Smiley.jpg?raw=true"
-						alt="Smiley"
-						class="icon"
-						style="position: relative; left: 37.5%;width: 25%;">
-		</div>
-		
-		<H5>Image(s) Sourced From:</H5>
-		<p>http://ladiesloot.com/product/smiley-face/</p>
-		<footer data-role="footer"><h1>&copy Michael Smith</h1></footer>
-	</div>																						
-<!-- end ninth page-->
+<!-- end Prawn Cocktails page-->
 	
 </body>
 </html>
